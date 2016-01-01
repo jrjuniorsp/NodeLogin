@@ -10,7 +10,7 @@ router.post('/authenticate', function(req, res, next) {
 		var user = {
 			id: 1,
 			name: "Batman",
-			username: batman,
+			username: username,
 			password: "1234",
 			email: "batman@superhero.com",
 			isActive: true,
