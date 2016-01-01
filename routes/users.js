@@ -16,7 +16,7 @@ router.post('/authenticate', function(req, res, next) {
 			isActive: true,
 			insertDate: new Date()
 		}
-		res.status(200).json(user);
+		res.status(200).send(user);
 
 	} else {		
 		res.status(400).send({errorMessage: "Username and/or Password do not exist"});	
